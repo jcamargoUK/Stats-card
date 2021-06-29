@@ -9,6 +9,7 @@
 body{
   margin: 0;
   padding: 0; 
+  height: 100vh;
   background-color: var(--very-dark-blue);
 }
 .main{
@@ -56,16 +57,21 @@ h1{
   text-align: center;
   display: flex;
   justify-content: space-around;
-  width: 80%;
-  padding-left: 5px;
+  width: 74%;
+  padding-left: 19px;
+  letter-spacing: 2px;
   color: var(--main-paragraph);
   text-transform: uppercase;
   font-size: 9px;
   padding-top: 0;
   margin-top: -25px;
 }
-.left{
-  
+.left{  
   background-color: var(--dark-desaturated-blue);
   color: var(--white);
+  
+}
+.images{
+  background-image: url(beach.jpg);
+    
 }
