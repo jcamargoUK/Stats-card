@@ -5,12 +5,14 @@
   --white: rgb(255, 255, 255);
   --main-paragraph: hsla(0, 0%, 100%, 0.75);
   --stat-headings: hsla(0, 0%, 100%, 0.6);
+  --border-radius: 5px;
 }
 body{
   margin: 0;
   padding: 0; 
   height: 100vh;
   background-color: var(--very-dark-blue);
+  font-family:'Inter', sans-serif;
 }
 .main{
   position: absolute;
@@ -20,13 +22,14 @@ body{
   transform: translate(-50%, -50%);
   width: 60%;
   height: 300px;
-  border-radius: 10px;
+  border-radius: 5px;
+  background-color: var(--soft-violet);
 }
 strong{
   color: var(--soft-violet);
 }
 h1{
-  font-family:'Inter', sans-serif;
+  
   font-weight: 700;
   padding-left: 40px;
   font-size: 25px;
@@ -47,7 +50,7 @@ h1{
   justify-content: space-around;
   width: 80%;
   padding-left: 5px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   margin-top: 20px;
   padding-bottom: 0;
@@ -57,7 +60,7 @@ h1{
   display: flex;
   justify-content: space-around;
   width: 74%;
-  padding-left: 19px;
+  padding-left: 22px;
   letter-spacing: 2px;
   color: var(--main-paragraph);
   text-transform: uppercase;
@@ -68,15 +71,21 @@ h1{
 .left, .images{
   margin: 0;
   padding: 0;
-  border: 1px solid black;
+  
   width: 50%;
   height: 100%;
 }
 .left{  
   background-color: var(--dark-desaturated-blue);
-  color: var(--white);  
+  color: var(--white); 
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius); 
 }
 .images{
   background-image: url(images/desktop.jpg);
-  
+  background-size: cover;
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius); 
+  mix-blend-mode: multiply;
+
 }
